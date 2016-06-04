@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>Synaptop Front-end Developer Challenge</title>
+	<link href="assets/css/styles.css" type="text/css" rel="stylesheet" />
+  <script src="./assets/js/jquery.min.js"></script>
+</head>
+<body>
+
+	<div id="mapSection" class="container"></div>
+
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gmaps.js/0.4.12/gmaps.min.js"></script>
+
+<script src="./compiled.js"></script>
+<script>
+document.getElementById('list').style.display='none';
+$('.section').click(function(){
+	if($(this).html() == 'List'){
+		document.getElementById('list').style.display='block';
+		document.getElementById('map').style.display='none';
+		$(this).html("Map");
+		//alert(1);
+	}else{
+
+		document.getElementById('list').style.display='none';
+		document.getElementById('map').style.display='block';
+		$(this).html("List");
+		//alert(2);
+	}
+});
+
+
+</script>
+</body>
+</html>
